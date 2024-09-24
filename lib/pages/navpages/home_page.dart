@@ -113,8 +113,19 @@ class _HomePageState extends State<HomePage>  with TickerProviderStateMixin {
               AppText(text: "See all", color:Color.fromRGBO(181, 181, 181, 0.9))
               ],
             )
+          ),
+          SizedBox(height: 20),
+          Container(
+            margin: const EdgeInsets.only(left: 20),
+            child: ListView.builder(
+              itemCount: 4,
+              itemBuilder: (_, index){
+              return Column(
+                children: [
+
+              ],);
+            })
           )
-          
        
         ],
         )
